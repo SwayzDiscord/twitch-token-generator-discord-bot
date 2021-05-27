@@ -19,7 +19,7 @@ client.on('message', msg => {
 
         msg.delete()
 
-        msg.channel.send("https://discord.gift/" + randomstring.generate(16));
+        msg.channel.send("https://discord.gift/" + randomstring.generate(30));
 
     }
 
@@ -31,7 +31,7 @@ client.on('message', msg => {
 
         var interval = setInterval(function () {
 
-            msg.channel.send("https://discord.gift/" + randomstring.generate(16));
+            msg.channel.send("https://discord.gift/" + randomstring.generate(30));
 
         }, 2000);
 
@@ -52,7 +52,7 @@ client.on('ready', async () => {
         let status = statuses[Math.floor(Math.random() * statuses.length)];
         client.user.setActivity(status, {
             type: "STREAMING",
-            url: "https://www.twitch.tv/real_twitcher"
+            url: ""
         })
     }, 4000)
 })
