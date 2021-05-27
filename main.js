@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const randomstring = require("randomstring");
 
-const prefix = '!';
+let prefix = config.PREFIX
 
 client.on('message', msg => {
 
